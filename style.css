@@ -51,11 +51,9 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    background: red !important;
-}
-body {
 
+body {
+background: red !important;
     font-family:
         -apple-system,
         BlinkMacSystemFont,
