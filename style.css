@@ -53,7 +53,7 @@ html {
 }
 
 body {
-background: red !important;
+   
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -872,4 +872,13 @@ footer {
             22px;
     }
 
+}
+/* =================================
+   FINAL COOL COLOR BACKGROUND
+================================= */
+
+html,
+body {
+    background-color: #F1F5F9 !important;
+    color: #0F172A;
 }
