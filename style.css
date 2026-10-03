@@ -762,7 +762,266 @@ nav {
     font-weight: 600;
 }
 
+/* ========================================
+   CERTIFICATES
+======================================== */
 
+.certificates-section {
+
+    border-top:
+        1px solid
+        var(--border);
+}
+
+
+.certificates-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* Certificate Card */
+
+.certificate-card {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 26px;
+
+    background:
+        var(--bg-card);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.certificate-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        #93C5FD;
+
+    box-shadow:
+        0 15px 35px
+        rgba(15, 23, 42, 0.10);
+}
+
+
+/* Certificate Icon */
+
+.certificate-icon {
+
+    width: 54px;
+
+    height: 54px;
+
+    min-width: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background:
+        #EFF6FF;
+
+    border:
+        1px solid
+        #BFDBFE;
+
+    color:
+        var(--blue);
+
+    font-family: monospace;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* Excel Icon */
+
+.excel-icon {
+
+    background:
+        #ECFDF5;
+
+    border-color:
+        #A7F3D0;
+
+    color:
+        #047857;
+}
+
+
+/* Certificate Content */
+
+.certificate-content {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* Top Row */
+
+.certificate-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Category */
+
+.certificate-category {
+
+    display: inline-block;
+
+    padding:
+        4px 9px;
+
+    border-radius: 20px;
+
+    background:
+        #EFF6FF;
+
+    color:
+        var(--blue-dark);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* Excel Category */
+
+.excel-category {
+
+    background:
+        #ECFDF5;
+
+    color:
+        #047857;
+}
+
+
+/* Year */
+
+.certificate-year {
+
+    color:
+        var(--text-muted);
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* Certificate Title */
+
+.certificate-content h3 {
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    margin-bottom: 7px;
+}
+
+
+/* Organization */
+
+.certificate-organization {
+
+    color:
+        var(--blue);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+/* Description */
+
+.certificate-description {
+
+    color:
+        var(--text-secondary);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 17px;
+}
+
+
+/* Certificate Link */
+
+.certificate-link {
+
+    display: inline-block;
+
+    color:
+        var(--blue);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.certificate-link:hover {
+
+    color:
+        var(--violet);
+
+    text-decoration:
+        underline;
+}
 /* ========================================
    FOOTER
 ======================================== */
@@ -790,7 +1049,32 @@ footer {
 ======================================== */
 
 @media (max-width: 768px) {
+.certificates-grid {
 
+    grid-template-columns:
+        1fr;
+}
+
+
+.certificate-card {
+
+    padding: 22px;
+
+}
+
+
+.certificate-top {
+
+    align-items:
+        flex-start;
+}
+
+
+.certificate-content h3 {
+
+    font-size:
+        19px;
+}
     nav {
 
         padding:
