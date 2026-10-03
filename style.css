@@ -1160,3 +1160,24 @@ footer {
 /* =================================
    FINAL COOL COLOR BACKGROUND
 ================================= */
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-card {
+        padding: 22px;
+    }
+
+    .certificate-content h3 {
+        font-size: 19px;
+    }
+
+}
