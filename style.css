@@ -1,0 +1,254 @@
+/* ================================
+   Global Styles
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Helvetica, Arial, sans-serif;
+
+    background: #ffffff;
+    color: #1f2328;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   Navigation
+================================ */
+
+header {
+    background: #24292f;
+    border-bottom: 1px solid #57606a;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+}
+
+
+/* Logo */
+
+.logo {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #2da44e;
+
+    margin-right: 8px;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #2da44e;
+}
+
+
+/* ================================
+   Hero Section
+================================ */
+
+.hero {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 120px 24px 140px;
+}
+
+
+.intro {
+    font-size: 20px;
+
+    color: #57606a;
+
+    margin-bottom: 8px;
+}
+
+
+.hero h1 {
+    font-size: clamp(48px, 8vw, 78px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 12px;
+}
+
+
+.hero h2 {
+    font-size: clamp(24px, 4vw, 36px);
+
+    font-weight: 500;
+
+    color: #2da44e;
+
+    margin-bottom: 24px;
+}
+
+
+.description {
+    max-width: 700px;
+
+    font-size: 19px;
+
+    color: #57606a;
+
+    margin-bottom: 36px;
+}
+
+
+/* ================================
+   Buttons
+================================ */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+
+.button {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+
+.primary {
+    background: #2da44e;
+
+    color: white;
+
+    border: 1px solid #2da44e;
+}
+
+
+.primary:hover {
+    background: #2c974b;
+}
+
+
+.secondary {
+    background: #ffffff;
+
+    color: #1f2328;
+
+    border: 1px solid #d0d7de;
+}
+
+
+.secondary:hover {
+    background: #f6f8fa;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    border-top: 1px solid #d0d7de;
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+    color: #57606a;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 16px 20px;
+
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 90px 20px 100px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
